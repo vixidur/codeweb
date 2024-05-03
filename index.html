@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAN VAN CHIEN | TIN TUC</title>
+    <style>
+        /* width */
+        ::-webkit-scrollbar {
+            width: 0.1px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #f5027c;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #42b1a6;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #faf5f1;
+        }
+
+        header {
+            background-color: #1e4564;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #27689e;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            height: 50px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            transition: color 0.3s;
+            font-size: 18px;
+            font-weight: 300;
+            display: inline-block;
+            white-space: nowrap;
+        }
+
+        nav a:hover {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: #ee5a41;
+            /* Màu nền khi hover */
+            padding: 10px 20px;
+            /* Khoảng cách giữa chữ và nền */
+            /* transition: padding 0.1s; */
+            /* Thêm hiệu ứng chuyển động cho padding */
+            height: 50px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .article {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #42b1a6;
+            padding-bottom: 20px;
+        }
+
+        .article h2 {
+            color: #333;
+        }
+
+        .article p {
+            color: #666;
+        }
+
+        footer {
+            background-color: #ee5a41;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        /* Đảm bảo nút bấm ở trên thanh menu */
+        #scroll-left-btn,
+        #scroll-right-btn {
+            position: absolute;
+            bottom: 77%;
+            transform: translateY(-50%);
+            z-index: 999;
+            width: 30px;
+            /* Độ rộng mong muốn */
+            height: 30px;
+            /* Chiều cao mong muốn */
+            border-radius: 50%;
+            /* Đảm bảo nút là hình tròn */
+        }
+
+        #scroll-left-btn {
+            left: 0;
+        }
+
+        #scroll-right-btn {
+            right: 0;
+        }
+
+        @media (max-width: 768px) {
+
+            #scroll-left-btn,
+            #scroll-right-btn {
+                width: 30px;
+                height: 30px;
+                bottom: 62%;
+                opacity: 30%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>WEBSITE OF TRAN VAN CHIEN DHTI15A16HN</h1>
+        <h2>&#9829; This is news page &#9829;</h2>
+    </header>
+    <div id="main-nav">
+        <nav id="nav">
+            <a href="#">Local News</a>
+            <a href="#">Sports</a>
+            <a href="#">OutThere Colorado</a>
+            <a href="#">Politics</a>
+            <a href="#">Business</a>
+            <a href="#">Education</a>
+            <a href="#">Outdoors</a>
+            <a href="#">Opinion</a>
+            <a href="#">VN & World</a>
+            <a href="#">Photo/Video</a>
+            <a href="#">Things To Do</a>
+        </nav>
+    </div>
+    <button id="scroll-left-btn">&lt;</button>
+    <button id="scroll-right-btn">&gt;</button>
+
+    <div class="container">
+        <div class="article">
+            <h2>"Cradle" of international stars: Taylor Swift received her PhD, a famous Vietnamese TikToker also
+                received her doctorate study</h2>
+            <p>Although not a school with specialized training in art, the university below is still the top choice of
+                many international stars.</p>
+        </div>
+        <div class="article">
+            <h2>Miss Vbiz rarely appears after a period of "hiding", how is life in America?</h2>
+            <p>In 2014, this beauty queen left Vietnam to live in America.</p>
+        </div>
+        <div class="article">
+            <h2>The rumored girlfriend of Thai male god Bright has baby doll-like visuals but her style is completely
+                opposite
+            </h2>
+            <p>The beauty of the girl dating Bright is receiving the attention of many online communities.</p>
+        </div>
+        <div class="article">
+            <h2>Husband's corner: David Beckham carried his wife home after the party at 2:30 a.m., paying attention to
+                every little detail</h2>
+            <p>A founder just received a prison sentence for fraud: Inflating revenue, attracting 117 million in
+                investment, and overvaluing startup to 1.1 billion USD later, investors realized they had been "robbed"
+            </p>
+        </div>
+        <div class="article">
+            <h2>Ba Long Jasmine Seed and daughter Pam Yeu Oi reveal the secret to safe and healthy dishes, surprising
+                Salim's mother</h2>
+            <p>In the family, "patriarch" Hai Long's father is always confident that he is the best dishwasher in the
+                house. Ba Long's secret lies in choosing...</p>
+        </div>
+        <div class="article">
+            <h2>In Vbiz, there is a female star of Gen Z: The salary is A-class, but after collaborating, everyone
+                immediately wants to
+                avoid it!</h2>
+            <p>The mission of a superhero is mostly to save the world, but perhaps in this female rapper's case, she
+                should save
+                herself first.</p>
+        </div>
+        <div class="article">
+            <h2>Queen of Tears episode 14: Kim Soo Hyun - Kim Ji Won have an emotional, villainous scene that makes
+                netizens' blood
+                boil.</h2>
+            <p>Queen of Tears episode 14 pushed the conflict to its climax, once again making the audience "cry out
+                loud".</p>
+        </div>
+        <div class="article">
+            <h2>Female singer Phi Phi suddenly passed away while performing</h2>
+            <p>While singing on stage, Phi Phi suddenly fell to the ground and fainted. People around quickly gave first
+                aid to the
+                female singer, but...</p>
+        </div>
+        <div class="article">
+            <h2>Female stars were criticized for "not being famous" and received 15 billion but performed the worst in
+                the movie</h2>
+            <p>This actress became the "hole" of the movie, which is currently ranked #1 in ratings.</p>
+        </div>
+        <div class="article">
+            <h2>Young plastic master Duy Tan appeared in a handsome black suit like a groom, with bright visuals</h2>
+            <p>Needless to say, the sisters are restless because of this moment of young plastic master Duy Tan.</p>
+        </div>
+        <div class="article">
+            <h2>Ba Long Jasmine Seed and daughter Pam Yeu Oi reveal the secret to safe and healthy dishes, surprising
+                Salim's mother</h2>
+            <p>In the family, "patriarch" Hai Long's father is always confident that he is the best dishwasher in the
+                house. Ba Long's
+                secret lies in choosing...</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Trang Tin Tuc | Duoc tao boi Tran Van Chien</p>
+    </footer>
+    <script>
+        const nav = document.getElementById('nav');
+        if (nav) {
+            const scrollLeftBtn = document.getElementById('scroll-left-btn');
+            const scrollRightBtn = document.getElementById('scroll-right-btn');
+
+            scrollLeftBtn.addEventListener('click', function () {
+                nav.scrollBy(-100, 0);
+            });
+
+            scrollRightBtn.addEventListener('click', function () {
+                nav.scrollBy(100, 0);
+            });
+
+            // Thêm sự kiện kéo tay
+            let isScrolling = false;
+            let scrollInterval;
+
+            scrollLeftBtn.addEventListener('mousedown', function () {
+                isScrolling = true;
+                scrollInterval = setInterval(function () {
+                    nav.scrollBy(-5, 0);
+                }, 10);
+            });
+
+            scrollRightBtn.addEventListener('mousedown', function () {
+                isScrolling = true;
+                scrollInterval = setInterval(function () {
+                    nav.scrollBy(5, 0);
+                }, 10);
+            });
+
+            document.addEventListener('mouseup', function () {
+                isScrolling = false;
+                clearInterval(scrollInterval);
+            });
+        } else {
+            console.error("Không tìm thấy phần tử nav trong DOM.");
+        }
+    </script>
+</body>
+
+</html>
