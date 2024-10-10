@@ -1,3 +1,14 @@
+<?php
+$ketqua = 0;
+if (isset($_POST['dayso'])) {
+    $nhap = $_POST['dayso'];
+    $mang = explode(",", $nhap);
+    foreach ($mang as $value) {
+        $ketqua += $value;
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,44 +18,44 @@
     <title>Document</title>
 </head>
 <style>
-body {
-    background-color: #ccc;
-}
+    body {
+        background-color: #ccc;
+    }
 
-.container {
-    background-color: white;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
-    max-width: 500px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    padding: 30px;
-    border-radius: 10px;
-}
+    .container {
+        background-color: white;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: 30px;
+        border-radius: 10px;
+    }
 
-input[type="text"] {
-    padding: 8px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border: 1px solid blue;
-    border-radius: 5px;
-}
+    input[type="text"] {
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border: 1px solid blue;
+        border-radius: 5px;
+    }
 
-button[type="submit"] {
-    color: white;
-    border: none;
-    padding: 8px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    background-color: blue;
-    border-radius: 5px;
-}
+    button[type="submit"] {
+        color: white;
+        border: none;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        background-color: blue;
+        border-radius: 5px;
+    }
 
-button[type="submit"]:hover {
-    background-color: darkblue;
-}
+    button[type="submit"]:hover {
+        background-color: darkblue;
+    }
 </style>
 
 <body>
@@ -54,7 +65,7 @@ button[type="submit"]:hover {
             <label for="">Nhap day so: </label><br>
             <input type="text" name="dayso" required placeholder="Vui long nhap day so"><br>
             <label for="">Tong day so: </label><br>
-            <input type="text" name="tong" id="" readonly placeholder="Ket qua"><br>
+            <input type="text" name="tong" id="" readonly placeholder="Ket qua" value="<?php echo $ketqua ?>"><br>
             <button type="submit">Tinh toan</button>
         </form>
     </div>
